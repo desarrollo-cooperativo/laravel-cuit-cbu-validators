@@ -1,5 +1,5 @@
 {
-    "name": "Cardumen\\CuitCbuValidator",
+    "name": "Cardumen/CuitCbuValidator",
     "description": "Laravel CUIT CBU Validation for Argentina",
     "keywords": ["CUIT","CBU","Validator","Argentina"],
     "homepage": "https://github.com/desarrollo-cooperativo/laravel-cuit-cbu-validators",
