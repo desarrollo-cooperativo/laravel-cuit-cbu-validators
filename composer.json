@@ -1,0 +1,24 @@
+{
+    "name": "Cardumen\CuitCbuValidator",
+    "description": "Laravel CUIT CBU Validation for Argentina",
+    "keywords": ["CUIT","CBU","Validator","Argentina"],
+    "homepage": "https://github.com/desarrollo-cooperativo/laravel-cuit-cbu-validators",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrés Teszkiewikcz @ Cardumen",
+            "email": "ateszki@gmail.com",
+            "homepage": "http://cardumen.com.ar",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cardumen\\CuitCbuValidator\\": "src/"
+        }
+    }
+}
