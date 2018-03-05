@@ -7,7 +7,7 @@ To install this package include it in your `composer.json`
 
 ```
 "require": {
-    "cardumen/laravel-cuit-cbu-validator": "v1.0"
+    "cardumen/laravel-cuit-cbu-validator": "v2.0"
 }
 ```
 
@@ -17,7 +17,7 @@ Add the Service Provider to the `provider` array in your
 `config/app.php`
 
 ```
-Cardumen\LaravelCuitCbuValidator\LaravelCuitCbuValidatorServiceProvider::class
+Cardumen\LaravelCuitCbuValidator\LaravelCuitCbuValidator::class
 ```
 
 # Using
@@ -26,8 +26,8 @@ Now you have a validator cuit and cbu
 
 ```
 		$rules = [
-            'cbu'=>'required|cbu',
-            'cuit'=>'required|cuit',
+            'cbu'=>['required',new \App\Rules\Cbu()],
+            'cuit'=>['required',new \App\Rules\Cuit()],
             ];
 ```
 
