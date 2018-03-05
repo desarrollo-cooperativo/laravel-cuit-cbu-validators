@@ -27,7 +27,7 @@ class CuitCbuValidatorServiceProvider extends ServiceProvider
             foreach($base as $k=>$v ){
                 $acumulado += $digitos[$k]*$v;
             }
-            $verificador = 11 - ($acum % 11);
+            $verificador = 11 - ($acumulado % 11);
             if ($verificador == 11) $verificador = 0;
             if ($verificador == 10) $verificador = 9;
             return (end($digitos) == $verificador);
