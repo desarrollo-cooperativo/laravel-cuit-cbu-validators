@@ -6,13 +6,13 @@ Laravel 5 CUIT CBU Validators for Argentina
 To install this package include it in your `composer.json`
 
 ```
-composer require cardumen/cuit-cbu-validator:>=v2.1
+composer require cardumen/cuit-cbu-validator:v2.1.2
 ```
 
 Add the Service Provider to the `provider` array in your `config/app.php`
 
 ```
-Cardumen\LaravelCuitCbuValidator\LaravelCuitCbuValidator::class
+Cardumen\CuitCbuValidator\LaravelCuitCbuValidator::class
 ```
 
 # Using

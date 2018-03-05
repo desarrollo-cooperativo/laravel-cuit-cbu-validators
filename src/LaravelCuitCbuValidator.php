@@ -1,6 +1,6 @@
 <?php
 
-namespace Cardumen\LaravelCuitCbuValidator;
+namespace Cardumen\CuitCbuValidator;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,7 +13,9 @@ class LaravelCuitCbuValidator extends ServiceProvider
      */
     public function boot()
     {
-           
+           require(__DIR__."/rules/Cuit.php");
+            
+           require(__DIR__."/rules/Cbu.php");        
     }
 
     /**
