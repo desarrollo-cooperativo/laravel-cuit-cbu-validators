@@ -54,4 +54,3 @@ class Cbu implements Rule
         return (10 - $suma % 10) % 10;
     }
 }
-}
